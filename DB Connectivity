@@ -5,4 +5,7 @@ steps
 2 create the dbContext and inherit the DbContext
 3 subscribe in the main project using the service collection 
 4 nuget package, postgresql, and entity core framework are the necessary packages 
-5 
+
+
+In simpler terms, DI helps manage dependencies (objects) outside of the class by passing them in via constructor, method, or property injection.
+
