@@ -9,3 +9,60 @@ steps
 
 In simpler terms, DI helps manage dependencies (objects) outside of the class by passing them in via constructor, method, or property injection.
 
+🔶 1. Reflection
+🔶 2. Middleware
+🔶 3. Filters
+AddScoped Add Transient and AddSingleton 
+
+
+Value types vs. reference types
+Classes, structs, records
+Properties, methods, events
+Delegates, events, Func/Action
+Generics
+Async/await & Task Parallel Library
+Exception handling
+LINQ (Language Integrated Query)
+Routing and Endpoints
+Controllers and Action Methods
+Model Binding & Validation
+Filters (Action, Exception, Authorization)
+Middleware pipeline
+Content Negotiation (JSON, XML)
+Versioning APIs
+Swagger / OpenAPI
+
+
+
+DbContext, DbSet
+Code-First approach
+Migrations
+LINQ queries and raw SQL
+Relationships (One-to-One, One-to-Many, Many-to-Many)
+Lazy, Eager, and Explicit Loading
+Tracking vs. No Tracking
+Transactions
+Performance optimization
+
+
+
+ASP.NET Identity
+JWT-based Authentication
+Role-based & Policy-based Authorization
+OAuth2 / OpenID Connect (with IdentityServer or Auth0)
+Secure password storage (hashing, salting)
+Protecting APIs and securing endpoints
+
+
+
+Background services (IHostedService)
+SignalR (real-time communication)
+Caching (In-Memory, Redis)
+Rate Limiting
+Localization & Globalization
+File Upload/Download
+Logging (Serilog, NLog)
+
+
+
+
