@@ -1,0 +1,17 @@
+This is the typescript tutorial
+
+Static Checking in the typescript :- Static checking is primarily about reviewing and analyzing your code before it is compiled or run. Its main purpose is to catch potential errors and issues early in the development process, well before the code executes.
+TypeScript parses your code into a structured form (AST).
+t analyzes that structure without executing it to verify types and syntax.
+Static checking in TypeScript:
+Does not execute your code.
+Analyzes the code by walking through its structure (AST)  Abstract Syntax Tree .
+Checks for type correctness, syntax issues, and potential errors.
+If no errors are found, the code is then transpiled (converted) into JavaScript.
+The resulting JavaScript code can then be executed normally.
+
+like the code const 
+shape={width:10, h:12}
+const num=10;
+console.log(shape.width* shape.ht)  ****output in js is NaN
+but in ts it will gives you the error.
