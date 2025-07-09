@@ -15,3 +15,16 @@ shape={width:10, h:12}
 const num=10;
 console.log(shape.width* shape.ht)  ****output in js is NaN
 but in ts it will gives you the error.
+
+
+
+The only difference between the js and ts is we have to declare the datatypes in typescript like  ########    let var_Name:type=value ############  
+
+*type script can remmeber the data type if you did not provide the data type of any variable *
+
+any :-using any keyword we can remove the typechecking of the typescript and can assign any value to this variable 
+unknown:- this works same as any but it allow the type checking of the variables and it does not allow to assign the variables
+access the properties or methods without the type checking 
+
+
+
