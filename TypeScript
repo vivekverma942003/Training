@@ -65,7 +65,11 @@ Runs forever without reaching the end.
 Both cases mean no usable return value exists, so the return type is never.
 
 
+👉👉 this is the format of function in which we can provide object as a parameter 
+ function printName (person: { first: string; last: string }) {
+console. log(* ${person. first} ${person.last}’) } 
 
+printName({ first: "Thomas", last: "Jenkins" });
 
 
 
