@@ -13,7 +13,7 @@ The resulting JavaScript code can then be executed normally.
 like the code const 
 shape={width:10, h:12}
 const num=10;
-console.log(shape.width* shape.ht)  ****output in js is NaN
+console.log(shape.width* shape.ht)  ****output in js is NaN ********************
 but in ts it will gives you the error.
 
 
@@ -25,6 +25,81 @@ The only difference between the js and ts is we have to declare the datatypes in
 any :-using any keyword we can remove the typechecking of the typescript and can assign any value to this variable 
 unknown:- this works same as any but it allow the type checking of the variables and it does not allow to assign the variables
 access the properties or methods without the type checking 
+
+*******************************************************************************************************************************
+when we do not define the data type in the typescript it takes it as any data type by default and it removes the type checking
+let name;  ### this is any data type;
+function name(num){  return num*num} here the types script uses the num as any data type
+
+we can also define the return type of functions in the typescript 
+
+
+#######################🤨🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚      
+function functionName(params): ReturnType {
+  // function body
+}
+🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚🤚
+
+const solve = () number =>{ return 190}
+👉👉 however it is not necessary to declare the return type of the functions 
+
+👉👉
+type script can have multiple functions return type and if we do not define the return type then it depend on functions
+function getValue(condition: boolean): string | number {
+  if (condition) {
+    return "Hello";
+  } else {
+    return 42;
+  }
+}
+
+😇😇😇  Never return type :-
+there is a special return type in the typescript which is never return type which means the function will never finishes the
+execution of the code 
+it provides to check the working of the functions 
+👉👉
+never means the function does not complete normally by returning a value.
+It either:
+Throws an error and stops execution immediately, or
+Runs forever without reaching the end.
+Both cases mean no usable return value exists, so the return type is never.
+
+
+
+
+
+
+
+
+
+👉👉
+
+
+
+
+
+
+
+
+
+
+
+👉👉
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
