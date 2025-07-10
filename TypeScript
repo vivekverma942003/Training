@@ -68,27 +68,47 @@ Both cases mean no usable return value exists, so the return type is never.
 👉👉 this is the format of function in which we can provide object as a parameter 
  function printName (person: { first: string; last: string }) {
 console. log(* ${person. first} ${person.last}’) } 
-
 printName({ first: "Thomas", last: "Jenkins" });
 
-
-
-
-
-
 👉👉
 
+we can provide extra property to the ibject function by creating a new object but we can not pass the extra property
+to the functions as a parameter while calling the functions 
+
+function printName(person: { first: string; last: string }): void {
+  console.log(`${person.first} ${person.last}`);
+}
 
 
+printName({ first: "Mick", last: "Jagger", age: 473 }  ❌❌❌❌❌❌❌❌❌❌❌❌
 
 
+const singer = {
+  first: "Mick",
+  last: "Jagger",
+  age: 473,
+  isAlive: true
+};
+// Passing the object to the function – works because it has required properties
+printName(singer);✅✅✅✅✅✅
+
+👉👉 we can also combine the two objects inside a single object 
+type Circle = {
+  radius: number;
+};
+type Colorful = {
+  color: string;
+};
+type ColorfulCircle = Circle & Colorful;
+const happyFace: ColorfulCircle = {
+  radius: 4,
+  color: "yellow"
+};
 
 
-
-
-
-
-👉👉
+Arrays in typescript:- 
+declaring an array inside the typescript  is to 
+const arr: string[]= [];
 
 
 
