@@ -1,7 +1,7 @@
  Life cycle order of the angular component. 
 1. Constructor → Dependency injection only
 2. ngOnChanges() → First call if @Input() properties exist [web:25]
-3. ngOnInit() → Initialize data, one-time setup
+3. ngOnInit() → Initialize data, one-time setup 
 4. ngDoCheck() → Custom change detection (runs often)
 5. ngAfterContentInit() → Content children ready
 6. ngAfterContentChecked() → Content checked
@@ -19,5 +19,18 @@ So ngOnChanges will run only if there is an input property and it contains at le
 (e.g., this.popover.open()) and properties from the parent after ngAfterViewInit.
 
 when we do not define any acess modifier then it will be treated as public by default
+
+
+
+
+
+
+
+
+
+
+
+
+
 API data stays in 1 component? → ngOnInit ✅
 Data needed by 2+ components? → Effects ✅
